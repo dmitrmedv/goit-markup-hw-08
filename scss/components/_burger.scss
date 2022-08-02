@@ -1,0 +1,21 @@
+.burger {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  padding: 22px 0;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__icon {
+    transition: var(--transition-animation);
+  }
+
+  &:hover &__icon {
+    fill: var(--text-color-accent);
+    transition: var(--transition-animation);
+  }
+}

@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+  background-color: var(--header-background-color);
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__link {
+  display: flex;
+  transition: var(--transition-animation);
+}
+
+.header__link:hover,
+.header__link:focus {
+  color: var(--text-color-accent);
+  transition: var(--transition-animation);
+}

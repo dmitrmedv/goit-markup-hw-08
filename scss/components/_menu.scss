@@ -1,0 +1,39 @@
+.menu {
+  background-color: var(--header-background-color);
+
+  &__title {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    background-color: var(--section-background-color-comand);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  &__btn:hover {
+    background-color: var(--text-color-accent);
+    color: var(--basic-background-color);
+    box-shadow: var(--shadow-menu-btn);
+    transition: var(--transition-animation);
+  }
+}

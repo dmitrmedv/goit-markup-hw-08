@@ -1,0 +1,49 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--text-color-accent);
+  color: var(--basic-background-color);
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: var(--shadow-btn);
+  transition: var(--transition-animation);
+}
+
+.btn:hover {
+  background-color: var(--button-hover-color);
+  transition: var(--transition-animation);
+}
+
+.btn-close {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  transition: var(--transition-animation);
+}
+
+.btn-close:hover {
+  fill: var(--text-color-accent);
+  transition: var(--transition-animation);
+}
+
+
+
+

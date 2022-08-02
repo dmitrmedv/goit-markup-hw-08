@@ -1,0 +1,26 @@
+.overlay {
+  background-color: var(--overlay-color);
+  padding: 63px 24px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: var(--transition-animation);
+
+  &__text {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 1.5 5;
+  letter-spacing: 0.03em;
+  color: var(--basic-background-color);
+}
+
+.project__link:hover &,
+.project__link:focus & {
+  transform: translateY(0);
+  transition: var(--transition-animation);
+}
+}
+
+

@@ -1,0 +1,38 @@
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: 90px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__link {
+    color: var(--text-color-primary);
+    position: relative;
+    padding: 32px 0;
+  }
+
+  &__link--active {
+    color: var(--text-color-accent);
+  }
+
+  &__link--active::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--text-color-accent);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+}

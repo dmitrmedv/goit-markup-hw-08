@@ -1,0 +1,16 @@
+.input__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:focus-within .modal__icon {
+    fill: var(--text-color-accent);
+    transition: var(--transition-animation);
+  }
+
+  &:focus-within .modal__input,
+  &:focus-within .modal__textarea {
+    border-color: var(--text-color-accent);
+    transition: var(--transition-animation);
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  --basic-background-color: #ffffff;
+  --brand-background-color: #2f303a;
+  --section-background-color: #e5e5e5;
+  --section-background-color-comand: #f5f4fa;
+  --text-color-accent: #2196f3;
+  --text-color-primary: #212121;
+  --text-color-secondary: #757575;
+  --color-logo: #000000;
+  --section-background-menu: #eeeeee;
+  --header-border-color: #ececec;
+  --border-color: #afb1b8;
+  --footer-background-color-link: #44454e;
+  --transition-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --button-hover-color: #188ce8;
+  --overlay-color: rgba(33, 150, 243, 0.9);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+  --shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shadow-employee-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-menu-btn: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}

@@ -1,0 +1,31 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--brand-background-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  &__container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    color: var(--basic-background-color);
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__contacts {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
