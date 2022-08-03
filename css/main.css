@@ -753,11 +753,6 @@ body {
   display: flex;
   gap: 50px;
 }
-@media screen and (max-width: 480px) {
-  .nav-list {
-    gap: 0;
-  }
-}
 .nav-list__link {
   color: var(--text-color-primary);
   position: relative;
