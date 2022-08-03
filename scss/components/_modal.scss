@@ -1,23 +1,23 @@
 .modal {
   position: absolute;
-  padding: 40px;
-  top: 50%;
   left: 50%;
-  min-width: 300px;
-  transform: scale(1) translate(-50%, -50%);
+  transform: translate(-50%, 0);
+  padding: 40px;
+  min-height: 609px;
   background-color: var(--basic-background-color);
   box-shadow: var(--shadow-employee-card);
   border-radius: 4px;
-  transition: transform var(--transition-animation);
 
   @media screen and (min-width: 480px) {
     min-width: 450px;
-    min-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
+    top: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform var(--transition-animation);
   }
 
   &__title {

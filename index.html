@@ -17,31 +17,33 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <nav class="nav">
-        <a class="logo link" href="./index.html"><span class="logo__decoration">Web</span>Studio</a>
-        <ul class="nav-list list">
-          <li class="nav-list__item"><a class="header__link nav-list__link link nav-list__link--active"
-              href="./index.html">Студия</a></li>
-          <li class="nav-list__item"><a class="header__link nav-list__link link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-list__item"><a class="header__link nav-list__link link" href="#">Контакты</a></li>
+      <a class="logo link" href="./index.html"><span class="logo__decoration">Web</span>Studio</a>
+      <div class="mobile-menu">
+        <nav class="nav">
+          <ul class="nav-list list">
+            <li class="nav-list__item"><a class="header__link nav-list__link link nav-list__link--active"
+                href="./index.html">Студия</a></li>
+            <li class="nav-list__item"><a class="header__link nav-list__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-list__item"><a class="header__link nav-list__link link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="contacts-list__item"><a class="header__link contacts-list__link link"
+              href="mailto:info@devstudio.com">
+              <svg class="contacts-list__icon" aria-label="связаться с нами по email" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a></li>
+          <li class="contacts-list__item"><a class="header__link contacts-list__link link" href="tel:+380961111111">
+              <svg class="contacts-list__icon" aria-label="связаться с нами по телефону" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contacts-list list">
-        <li class="contacts-list__item"><a class="header__link contacts-list__link link"
-            href="mailto:info@devstudio.com">
-            <svg class="contacts-list__icon" aria-label="связаться с нами по email" width="16px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a></li>
-        <li class="contacts-list__item"><a class="header__link contacts-list__link link" href="tel:+380961111111">
-            <svg class="contacts-list__icon" aria-label="связаться с нами по телефону" width="10px" height="16px">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a></li>
-      </ul>
+      </div>
       <button class="burger" type="button">
-        <svg class="burger__icon" width="24" height="16" >
+        <svg class="burger__icon" width="24" height="16">
           <use href="./images/symbol-defs.svg#icon-burger"></use>
         </svg>
       </button>
@@ -163,7 +165,8 @@
             </ul>
           </li>
           <li class="employee">
-            <img class="employee__photo img" src="./images/olga_repina.jpeg" alt="фото Ольги Репиной" width="270" height="260" />
+            <img class="employee__photo img" src="./images/olga_repina.jpeg" alt="фото Ольги Репиной" width="270"
+              height="260" />
             <h3 class="employee__name">Ольга Репина</h3>
             <p class="employee__job-title">Frontend Developer</p>
             <ul class="social-network list">
@@ -319,9 +322,11 @@
             <ul class="address__list list">
               <li class="address__item"><a class="address__link address__link--light link" href="#">г. Киев, пр-т Леси
                   Украинки, 26</a></li>
-              <li class="address__item"><a class="address__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item"><a class="address__link link"
+                  href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="address__item"><a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="address__item"><a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
@@ -415,7 +420,8 @@
           <label class="checkbox__label">
             <input class="checkbox__input" type="checkbox" name="checkbox">
             <span class="checkbox__icon"></span>
-            <div>Соглашаюсь с рассылкой и принимаю <span class="checkbox__link"> Условия договора</span></div></label>
+            <div>Соглашаюсь с рассылкой и принимаю <span class="checkbox__link"> Условия договора</span></div>
+          </label>
         </div>
         <button class="btn modal__btn" type="submit">Отправить</button>
       </form>

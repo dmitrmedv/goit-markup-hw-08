@@ -3,15 +3,19 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: 90px;
-  display: none;
+  display: flex;
+  gap: 50px;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
+    @media screen and (max-width: 768px) {
+    display: block;
+    gap: 0;
   }
 
   &__item {
-    margin-right: 50px;
+    
+        @media screen and (max-width: 768px) {
+          
+  }
   }
 
   &__link {

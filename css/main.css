@@ -62,6 +62,22 @@ body {
   }
 }
 
+.mobile-menu {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-left: 90px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .burger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,11 +130,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 93px 15px;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity var(--transition-animation), visibility var(--transition-animation);
   transition: opacity var(--transition-animation), visibility var(--transition-animation);
 }
-
 .benefits {
   background-color: var(--header-background-color);
 }
@@ -310,16 +327,11 @@ body {
 
 .contacts-list {
   margin-left: auto;
-  display: none;
+  display: block;
   font-weight: 500;
   font-size: 12px;
   line-height: 0.875;
   letter-spacing: 0.02em;
-}
-@media screen and (min-width: 768px) {
-  .contacts-list {
-    display: block;
-  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-list {
@@ -485,6 +497,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__link {
@@ -616,31 +629,32 @@ body {
 
 .modal {
   position: absolute;
-  padding: 40px;
-  top: 50%;
   left: 50%;
-  min-width: 300px;
-  -webkit-transform: scale(1) translate(-50%, -50%);
-          transform: scale(1) translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding: 40px;
+  min-height: 609px;
   background-color: var(--basic-background-color);
   -webkit-box-shadow: var(--shadow-employee-card);
           box-shadow: var(--shadow-employee-card);
   border-radius: 4px;
-  -webkit-transition: -webkit-transform var(--transition-animation);
-  transition: -webkit-transform var(--transition-animation);
-  transition: transform var(--transition-animation);
-  transition: transform var(--transition-animation), -webkit-transform var(--transition-animation);
 }
 @media screen and (min-width: 480px) {
   .modal {
     min-width: 450px;
-    min-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     min-height: 581px;
+    top: 50%;
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+    -webkit-transition: -webkit-transform var(--transition-animation);
+    transition: -webkit-transform var(--transition-animation);
+    transition: transform var(--transition-animation);
+    transition: transform var(--transition-animation), -webkit-transform var(--transition-animation);
   }
 }
 .modal__title {
@@ -734,18 +748,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: 90px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
+    gap: 0;
   }
-}
-.nav-list__item {
-  margin-right: 50px;
 }
 .nav-list__link {
   color: var(--text-color-primary);
