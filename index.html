@@ -18,7 +18,7 @@
   <header class="header">
     <div class="header__container container">
       <a class="logo link" href="./index.html"><span class="logo__decoration">Web</span>Studio</a>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-list__item"><a class="header__link nav-list__link link nav-list__link--active"
@@ -41,10 +41,28 @@
               </svg>
               +38 096 111 11 11</a></li>
         </ul>
+        <ul class="mobile-menu__network list">
+          <li class="mobile-menu__network-item">
+            <a class="mobile-menu__link link" href="#">instagram</a>
+          </li>
+          <li class="mobile-menu__network-item">
+            <a class="mobile-menu__link link" href="#">twitter</a>
+          </li>
+          <li class="mobile-menu__network-item">
+            <a class="mobile-menu__link link" href="#">facebook</a>
+          </li>
+          <li class="mobile-menu__network-item">
+            <a class="mobile-menu__link link" href="#">linkedin</a>
+          </li>
+        </ul>
       </div>
-      <button class="burger" type="button">
-        <svg class="burger__icon" width="24" height="16">
-          <use href="./images/symbol-defs.svg#icon-burger"></use>
+      <button class="burger-menu" type="button" data-menu-button>
+        <svg class="burger-menu__icon"
+        width="24"
+        height="16"
+        aria-label="Мобильное меню">
+          <use class="burger-menu__burger-icon" href="./images/symbol-defs.svg#icon-burger"></use>
+          <use class="burger-menu__cross-icon" href="./images/symbol-defs.svg#icon-close-menu"></use>
         </svg>
       </button>
     </div>
@@ -384,7 +402,7 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="btn-close" type="button" data-modal-close><svg width="18px" height="18px">
-          <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg></button>
       <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
       <form class="modal__form">
@@ -428,6 +446,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

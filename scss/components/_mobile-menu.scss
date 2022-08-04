@@ -1,19 +1,49 @@
 .mobile-menu {
-    // position: absolute;
-    // background-color: #fff;
-    // outline: 1px solid red;
-  display: none;
+  display: flex;
   align-items: center;
   width: 100%;
-  margin-left: 90px;
 
-//     @media screen and (max-width: 768px) {
-//     top: 100%;
-//     padding: 48px 40px;
-//     min-width: 480px;
-//   }
+  &__network {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    padding: 48px 40px;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    &.is-open {
+      display: block;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 90px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    padding: 10px;
+  }
+
+  &__network-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

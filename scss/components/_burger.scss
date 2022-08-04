@@ -1,21 +1,37 @@
-.burger {
-  display: flex;
+.burger-menu {
+  // display: flex;
   background-color: transparent;
   border: none;
   margin-left: auto;
+  margin-right: 8px;
   padding: 22px 0;
   cursor: pointer;
+  z-index: 30;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  &__icon {
+  &__cross-icon {
+    display: none;
+  }
+
+  &.is-open &__cross-icon {
+    display: block;
+  }
+
+    &.is-open &__burger-icon {
+    display: none;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: var(--text-color-accent);
     transition: var(--transition-animation);
   }
 
-  &:hover &__icon {
-    fill: var(--text-color-accent);
+  &__icon:hover,
+  &__icon:focus {
     transition: var(--transition-animation);
   }
 }

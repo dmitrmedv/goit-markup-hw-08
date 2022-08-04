@@ -39,11 +39,8 @@
   transition: var(--transition-animation);
 }
 
-.btn-close:hover {
+.btn-close:hover,
+.btn-close:focus {
   fill: var(--text-color-accent);
   transition: var(--transition-animation);
 }
-
-
-
-

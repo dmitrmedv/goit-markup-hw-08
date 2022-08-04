@@ -1,14 +1,13 @@
 @import "./utils/base";
-
 @import "./utils/variables";
 
 @import "./components/section";
+@import "./components/button";
 @import "./components/mobile-menu";
 @import "./components/burger";
 @import "./components/address";
 @import "./components/backdrop";
 @import "./components/benefits";
-@import "./components/button";
 @import "./components/checkbox";
 @import "./components/contact-list";
 @import "./components/container";
@@ -27,10 +26,9 @@
 @import "./components/our-clients";
 @import "./components/our-work";
 @import "./components/overlay";
-@import "./components/portfolio";
-
 @import "./components/social-network";
 @import "./components/subscription";
 @import "./components/team";
 @import "./components/title";
 @import "./components/project";
+@import "./components/portfolio";
