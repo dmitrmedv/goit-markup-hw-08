@@ -30,6 +30,7 @@
     display: inline-flex;
     align-items: center;
     color: var(--text-color-secondary);
+    transition: var(--transition-animation);
 
     @media screen and (min-width: 768px) {
       padding: 5px;
@@ -46,6 +47,7 @@
       font-size: 34px;
       line-height: calc(40 / 32);
       letter-spacing: 0.02em;
+      transition: var(--transition-animation);
     }
   }
 }

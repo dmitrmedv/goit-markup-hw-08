@@ -23,6 +23,7 @@ body {
 .img {
   display: block;
   height: auto;
+  max-width: 100%;
 }
 
 :root {
@@ -429,6 +430,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: var(--text-color-secondary);
+  -webkit-transition: var(--transition-animation);
+  transition: var(--transition-animation);
 }
 @media screen and (min-width: 768px) {
   .contacts-list__link {
@@ -445,6 +448,8 @@ body {
     font-size: 34px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    -webkit-transition: var(--transition-animation);
+    transition: var(--transition-animation);
   }
 }
 
@@ -512,7 +517,6 @@ body {
 }
 .employee__photo {
   margin-bottom: 30px;
-  width: 100%;
 }
 .employee__name {
   font-weight: 500;
