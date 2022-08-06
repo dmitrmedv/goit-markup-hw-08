@@ -331,6 +331,8 @@ body {
   margin-top: 20px;
 }
 .checkbox__icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 16px;
   height: 15px;
   display: inline-block;
@@ -374,7 +376,7 @@ body {
 }
 
 .checkbox__input:checked + .checkbox__icon {
-  background-image: url(../images/check.svg);
+  background-image: url(../../images/check.svg);
   height: 15px;
   width: 16px;
   background-origin: border-box;
