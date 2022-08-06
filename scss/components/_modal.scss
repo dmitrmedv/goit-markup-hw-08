@@ -1,14 +1,15 @@
 .modal {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  position: relative;
   padding: 40px;
-  min-height: 609px;
+  min-width: 100%;
   background-color: var(--basic-background-color);
   box-shadow: var(--shadow-employee-card);
   border-radius: 4px;
 
   @media screen and (min-width: 480px) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     min-width: 450px;
   }
 
@@ -28,7 +29,11 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color-primary);
-    width: 370px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+      width: 370px;
+    }
 
     @media screen and (min-width: 1200px) {
       font-size: 20px;
