@@ -376,7 +376,7 @@ body {
 }
 
 .checkbox__input:checked + .checkbox__icon {
-  background-image: url(../../images/check.svg);
+  background-image: url(/images/check.svg);
   height: 15px;
   width: 16px;
   background-origin: border-box;
