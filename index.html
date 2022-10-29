@@ -18,45 +18,57 @@
   <header class="header">
     <div class="header__container container">
       <a class="logo link" href="./index.html"><span class="logo__decoration">Web</span>Studio</a>
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu">
+        <button class="close-menu" type="button">
+          <svg class="close-menu__icon" width="19" height="19">
+            <use class="close-menu__cross-icon" href="./images/symbol-defs.svg#icon-close-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav-list list">
-            <li class="nav-list__item"><a class="header__link nav-list__link link nav-list__link--active"
-                href="./index.html">Студия</a></li>
-            <li class="nav-list__item"><a class="header__link nav-list__link link" href="./portfolio.html">Портфолио</a>
+            <li class="nav-list__item">
+              <a class="link nav-list__link nav-list__link--active"
+                href="./index.html">Студия</a>
+              </li>
+            <li class="nav-list__item">
+              <a class="link nav-list__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-list__item"><a class="header__link nav-list__link link" href="#">Контакты</a></li>
+            <li class="nav-list__item">
+              <a class="link nav-list__link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts-list list">
-          <li class="contacts-list__item"><a class="header__link contacts-list__link link"
-              href="mailto:info@devstudio.com">
-              <svg class="contacts-list__icon" aria-label="связаться с нами по email" width="16px" height="12px">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a></li>
-          <li class="contacts-list__item"><a class="header__link contacts-list__link link" href="tel:+380961111111">
-              <svg class="contacts-list__icon" aria-label="связаться с нами по телефону" width="10px" height="16px">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a></li>
-        </ul>
-        <ul class="mobile-menu__network list">
-          <li class="mobile-menu__network-item">
-            <a class="mobile-menu__link link" href="#">instagram</a>
-          </li>
-          <li class="mobile-menu__network-item">
-            <a class="mobile-menu__link link" href="#">twitter</a>
-          </li>
-          <li class="mobile-menu__network-item">
-            <a class="mobile-menu__link link" href="#">facebook</a>
-          </li>
-          <li class="mobile-menu__network-item">
-            <a class="mobile-menu__link link" href="#">linkedin</a>
-          </li>
-        </ul>
+        <div class="contacts">
+          <ul class="contacts-list list">
+            <li class="contacts-list__item"><a class="header__link contacts-list__link link" href="tel:+380961111111">
+                <svg class="contacts-list__icon" aria-label="связаться с нами по телефону" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a></li>
+            <li class="contacts-list__item"><a class="header__link contacts-list__link link"
+                href="mailto:info@devstudio.com">
+                <svg class="contacts-list__icon" aria-label="связаться с нами по email" width="16px" height="12px">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-menu__network list">
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__link link" href="#">instagram</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__link link" href="#">twitter</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__link link" href="#">facebook</a>
+            </li>
+            <li class="mobile-menu__network-item">
+              <a class="mobile-menu__link link" href="#">linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <button class="burger-menu" type="button" data-menu-button>
+      <button class="burger-menu" type="button">
         <svg class="burger-menu__icon" width="24" height="16" aria-label="Мобильное меню">
           <use class="burger-menu__burger-icon" href="./images/symbol-defs.svg#icon-burger"></use>
           <use class="burger-menu__cross-icon" href="./images/symbol-defs.svg#icon-close-menu"></use>
@@ -138,8 +150,8 @@
           </li>
           <li class="our-work__item">
             <a href="#"><img class="img" srcset="./images/image3.jpeg 1x,
-              ./images/image3@2x.jpeg 2x" src="./images/image3.jpeg" alt="дизайнер выбирает цвет из палитры на планшете"
-                width="370" height="294" />
+              ./images/image3@2x.jpeg 2x" src="./images/image3.jpeg"
+                alt="дизайнер выбирает цвет из палитры на планшете" width="370" height="294" />
               <p class="our-work__text">Дизайнерские решения</p>
             </a>
           </li>
@@ -152,8 +164,8 @@
         <ul class="team-list list">
           <li class="employee">
             <img class="employee__photo img" srcset="./images/igor_demyanenko.jpeg 1x,
-              ./images/igor_demyanenko@2x.jpeg 2x" src="./images/igor_demyanenko.jpeg" alt="фото Игоря Демьяненко" width="270"
-              height="260" />
+              ./images/igor_demyanenko@2x.jpeg 2x" src="./images/igor_demyanenko.jpeg" alt="фото Игоря Демьяненко"
+              width="270" height="260" />
             <h3 class="employee__name">Игорь Демьяненко</h3>
             <p class="employee__job-title">Product Designer</p>
             <ul class="social-network list">
@@ -218,8 +230,8 @@
           </li>
           <li class="employee">
             <img class="employee__photo img" srcset="./images/nikolay_tarasov.jpeg 1x,
-              ./images/nikolay_tarasov@2x.jpeg 2x" src="./images/nikolay_tarasov.jpeg" alt="фото Николая Тарасова" width="270"
-              height="260" />
+              ./images/nikolay_tarasov@2x.jpeg 2x" src="./images/nikolay_tarasov.jpeg" alt="фото Николая Тарасова"
+              width="270" height="260" />
             <h3 class="employee__name">Николай Тарасов</h3>
             <p class="employee__job-title">Marketing</p>
             <ul class="social-network list">
@@ -251,8 +263,8 @@
           </li>
           <li class="employee">
             <img class="employee__photo img" srcset="./images/mikhail_ermakov.jpeg 1x,
-              ./images/mikhail_ermakov@2x.jpeg 2x" src="./images/mikhail_ermakov.jpeg" alt="фото Михаила Ермакова" width="270"
-              height="260" />
+              ./images/mikhail_ermakov@2x.jpeg 2x" src="./images/mikhail_ermakov.jpeg" alt="фото Михаила Ермакова"
+              width="270" height="260" />
             <h3 class="employee__name">Михаил Ермаков</h3>
             <p class="employee__job-title">UI Designer</p>
             <ul class="social-network list">

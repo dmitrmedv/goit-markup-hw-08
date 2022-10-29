@@ -6,7 +6,6 @@
   margin-right: 8px;
   padding: 22px 0;
   cursor: pointer;
-  z-index: 30;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -16,13 +15,13 @@
     display: none;
   }
 
-  &.is-open &__cross-icon {
-    display: block;
-  }
+  // &.is-open &__cross-icon {
+  //   display: block;
+  // }
 
-    &.is-open &__burger-icon {
-    display: none;
-  }
+  //   &.is-open &__burger-icon {
+  //   display: none;
+  // }
 
   &__icon:hover,
   &__icon:focus {

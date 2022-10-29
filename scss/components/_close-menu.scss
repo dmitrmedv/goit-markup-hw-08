@@ -1,0 +1,26 @@
+.close-menu {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  &__cross-icon {
+    transition: var(--transition-animation);
+  }
+
+  &:hover &__cross-icon,
+  &:focus &__cross-icon {
+    fill: var(--text-color-accent);
+  }
+}
